@@ -1,0 +1,70 @@
+package class19Super;
+// create 3 classes like Dog Cat Horse define 5 properties (use default
+// access level) in each class
+// and one printInfo method that will print the values of these variables.
+// create constructors as well in each child class to initialize those
+// properties create one object of each class and call the printInfo method
+public class Animals {
+
+    String name;
+    String breed;
+    int age;
+    String color;
+    int noOfLegs;
+
+    public void printInfo() {
+        System.out.println(name + " is a " + breed + " and " + age + " years old. " + name + " is color " + color + " and has " + noOfLegs + " legs.");
+    }
+}
+public class Dog extends Animals {
+
+    static Dog dog = new Dog("Masha", "poodle", 1, "orange", 4);
+
+    public Dog(String name, String breed, int age, String color, int noOfLegs) {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.color = color;
+        this.noOfLegs = noOfLegs;
+    }
+    public static void main(String[] args) {
+
+        dog.printInfo();
+    }
+}
+public class Horse extends Animals {
+    static Horse horse = new Horse("Hersie", "Thoroughbred", 3, "white", 4);
+
+    public Horse(String name, String breed, int age, String color, int noOfLegs) {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.color = color;
+        this.noOfLegs = noOfLegs;
+    }
+
+    public static void main(String[] args) {
+
+        horse.printInfo();
+    }
+
+}
+public class Cat extends Animals {
+    static Cat cat = new Cat("Biscuit", "domestic", 6, "gray", 4);
+
+    public Cat(String name, String breed, int age, String color, int noOfLegs) {
+        this.name = name;
+        this.breed = breed;
+        this.age = age;
+        this.color = color;
+        this.noOfLegs = noOfLegs;
+    }
+
+    public static void main(String[] args) {
+
+        cat.printInfo();
+    }
+}
+
+
+

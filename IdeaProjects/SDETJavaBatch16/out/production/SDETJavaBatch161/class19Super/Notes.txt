@@ -1,0 +1,6 @@
+The super() keyword is used to call the constructor of the parent class from
+ within the constructor of the child class. It must be the first statement in
+  the constructor of the child class. By calling the parent class constructor
+   using super(), the child class can inherit the properties and methods of
+   the parent class and add its own properties and methods as needed.
+   -----------------------------------------------------------------
